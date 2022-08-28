@@ -13,28 +13,28 @@ module.exports = questions => {
     const {title, description, installation, usage, license, contributing, test, username, email} = questions;
 
     return `
-    # ${title}
+# ${title}
 
-    ## Description
-    ${description}
+## Description
+${description}
 
-    ## Installation
-    ${installation}
+## Installation
+${installation}
 
-    ## Usage
-    ${usage}
+## Usage
+${usage}
 
-    ## License
-    ${license}
+## License
+${license}
 
-    ## Contributing
-    ${contributing}
+## Contributing
+${contributing}
 
-    ## Tests
-    ${test}
+## Tests
+${test}
 
-    ## Questions
-    ${username}
-    ${email}
+## Questions
+${username}
+${email}
     `
 };

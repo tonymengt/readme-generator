@@ -41,10 +41,10 @@ const questions = () => {
             message: "please provide instruction on how use your project."
         },
         {
-            type: "list",
+            type: "checkbox",
             name: "license",
             message: "please select the license right for your project.",
-            choices: ["MIT License", "Apache License 2.0", "GNU General Public License v3.0"]
+            choice: ["MIT License", "Apache License 2.0", "GNU General Public License v3.0"]
         },
         {
             type: "input",
