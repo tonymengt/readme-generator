@@ -111,9 +111,9 @@ const generateLicenseInfo = licenseData => {
             return;
         }
         if (data === "MIT License") {
-            output += `[![badge](https://img.shields.io/badge/license-${data}-brightgreen)](https://choosealicense.com/licenses/mit/)`
+            output += `[![badge](https://img.shields.io/badge/license-${data}-brightgreen)](https://choosealicense.com/licenses/mit/) `
         } else if (data === "Apache License 2.0") {
-            output += `[![badge](https://img.shields.io/badge/license-${data}-brightgreen)](https://choosealicense.com/licenses/apache-2.0/)`
+            output += `[![badge](https://img.shields.io/badge/license-${data}-brightgreen)](https://choosealicense.com/licenses/apache-2.0/) `
         } else {
             output += `[![badge](https://img.shields.io/badge/license-${data}-brightgreen)](https://choosealicense.com/licenses/gpl-3.0/)`
         }
@@ -129,7 +129,7 @@ module.exports = questions => {
 
 ## Description
 ${generateLicenseInfo(license)}
-${description}
+<br>${description}
 
 ## Table of contents
 ${generateTableInstall(rest.installConfirm)}
@@ -143,13 +143,13 @@ ${generateInstallation(installation)}
 ${generateUsage(usage)}
 
 ## License
-    This application has the following licenses:
-    ${generateLicense(license)}
+This application has the following licenses:
+${generateLicense(license)}
 ${generateContribute(contributors)}
 ${generateTest(test)}
 ## Questions
-    Contact Info:
-    GitHub: [${username}](https://github.com/${username})
-    Email: [${email}](mailto:${email})
-    `
+Contact Info:
+GitHub: [${username}](https://github.com/${username})
+Email: [${email}](mailto:${email})
+`
 };
