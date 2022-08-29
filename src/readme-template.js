@@ -31,9 +31,9 @@ const generateLicense = licenseData => {
         let output = ""
         licenseData.forEach(data => {
             if (data === "MIT License") {
-                output += `* [MIT License](https://choosealicense.com/licenses/mit/) <br>`
+                output += `* [MIT License](https://choosealicense.com/licenses/mit/)`
             } else if (data === "Apache License 2.0") {
-                output += `* [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/) <br>`
+                output += `* [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)`
             } else {
                 output += `* [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)`
             }
@@ -111,11 +111,11 @@ const generateLicenseInfo = licenseData => {
             return;
         }
         if (data === "MIT License") {
-            output += `[![badge](https://img.shields.io/badge/license-${data}-brightgreen)](https://choosealicense.com/licenses/mit/) `
+            output += `[![badge](https://img.shields.io/badge/License-${data}-brightgreen)](https://choosealicense.com/licenses/mit/) `
         } else if (data === "Apache License 2.0") {
-            output += `[![badge](https://img.shields.io/badge/license-${data}-brightgreen)](https://choosealicense.com/licenses/apache-2.0/) `
+            output += `[![badge](https://img.shields.io/badge/License-${data}-brightblue)](https://choosealicense.com/licenses/apache-2.0/) `
         } else {
-            output += `[![badge](https://img.shields.io/badge/license-${data}-brightgreen)](https://choosealicense.com/licenses/gpl-3.0/)`
+            output += `[![badge](https://img.shields.io/badge/License-${data}-brightorange)](https://choosealicense.com/licenses/gpl-3.0/)`
         }
         
     })
