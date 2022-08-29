@@ -7,54 +7,92 @@ const {writeFile} = require("./utils/generateMarkdown")
 const questions = () => {
     return inquirer.prompt([
         {
-        type: "input",
-        name: "title",
-        message: "what is the title of your project?",
-        validate: titleInput => {
-            if (titleInput) {
-                return true;
-            } else {
-                console.log("please provide a title to your project!")
-                return false;
+            type: "input",
+            name: "title",
+            message: "what is the title of your project? (Required)",
+            validate: titleInput => {
+                if (titleInput) {
+                    return true;
+                } else {
+                    console.log("please provide a title to your project!")
+                    return false;
+                }
             }
-        }
         },
         {
             type: "input",
             name: "description",
-            message: "please provide a description for your project."
+            message: "please provide a description for your project. (Required)",
+            validate: titleInput => {
+                if (titleInput) {
+                    return true;
+                } else {
+                    console.log("please provide a description to your project!")
+                    return false;
+                }
+            }
         },
         {
-            type: "confirm",
-            name: "tableContentConfirm",
-            message: "would you like to create a table of contents?",
-            default: true
+            type: "confrim",
+            name: "installConfirm",
+            message: "Would you like to include an 'Installation Instruction' section?",
+            default: false
         },
         {
             type: "input",
             name: "installation",
-            message: "What are the steps required to install your project?"
+            message: "What are the steps required to install your project?",
+            when: ({installConfirm}) => {
+                return (installConfirm ? true : false)
+            }
+        },
+        {
+            type: "confrim",
+            name: "usageConfirm",
+            message: "Would you like to include an 'Usage' section?",
+            default: false
         },
         {
             type: "input",
             name: "usage",
-            message: "please provide instruction on how use your project."
+            message: "please provide instruction on how use your project.",
+            when: ({usageConfirm}) => {
+                return (usageConfirm ? true : false)
+            }
         },
         {
             type: "checkbox",
             name: "license",
             message: "please select the license right for your project.",
-            choice: ["MIT License", "Apache License 2.0", "GNU General Public License v3.0"]
+            choices: ["MIT License", "Apache License 2.0", "GNU General Public License v3.0"]
+        },
+        {
+            type: "confrim",
+            name: "contributeConfirm",
+            message: "Would you like to include an 'Contributors' section?",
+            default: false
         },
         {
             type: "input",
-            name: "contributing",
-            message: "please provide the names of any contributors to this project."
+            name: "contributors",
+            message: "please provide the names of any contributors to this project.",
+            when: ({contributeConfirm}) => {
+                return (contributeConfirm ? true : false)
+            }
+        },
+        {
+            type: "confrim",
+            name: "testConfirm",
+            message: "Would you like to include an 'Test' section?",
+            default: false
         },
         {
             type: "input",
             name: "test",
-            message: "please provide test case for your project"
+            message: "please provide test case for your project",
+            when: ({testConfirm}) => {
+                return (testConfirm ? true : false)
+            }
         },
         {
             type: "input",
