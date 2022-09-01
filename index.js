@@ -33,21 +33,21 @@ const questions = () => {
             }
         },
         {
-            type: "confrim",
-            name: "installConfirm",
-            message: "Would you like to include an 'Installation Instruction' section?",
+            type: 'confirm',
+            name: 'installConfirm',
+            message: 'Would you like to include an "Installation Instruction" section?',
             default: false
         },
         {
             type: "input",
             name: "installation",
-            message: "What are the steps required to install your project?",
+            message: "What are the steps required to install any dependecies your project?",
             when: ({installConfirm}) => {
                 return (installConfirm ? true : false)
             }
         },
         {
-            type: "confrim",
+            type: "confirm",
             name: "usageConfirm",
             message: "Would you like to include an 'Usage' section?",
             default: false
@@ -67,7 +67,7 @@ const questions = () => {
             choices: ["GNU AGPLv3", "GNU GPLv3", "GNU LGPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "MIT License", "Boost Software License 1.0", "The Unlicense"]
         },
         {
-            type: "confrim",
+            type: "confirm",
             name: "contributeConfirm",
             message: "Would you like to include an 'Contributors' section?",
             default: false
@@ -81,7 +81,7 @@ const questions = () => {
             }
         },
         {
-            type: "confrim",
+            type: "confirm",
             name: "testConfirm",
             message: "Would you like to include an 'Test' section?",
             default: false
@@ -89,7 +89,7 @@ const questions = () => {
         {
             type: "input",
             name: "test",
-            message: "please provide test case for your project",
+            message: "please provide test case for your project.",
             when: ({testConfirm}) => {
                 return (testConfirm ? true : false)
             }

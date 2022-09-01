@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const writeFile = fileContent => {
   return new Promise((resolve, reject) => {
-    fs.writeFile('./README_test.md', fileContent, err => {
+    fs.writeFile('./README.md', fileContent, err => {
       if (err) {
         reject(err);
         return;

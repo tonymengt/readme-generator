@@ -54,7 +54,7 @@ const generateLicense = licenseData => {
                 output8 += `* [The Unlicense](https://choosealicense.com/licenses/unlicense/)`
             } 
         })
-        if (!output1 || !output2 || !output3 || !output4 || !output5 || !output6 || !output7 || !output8){
+        if (!output1 && !output2 && !output3 && !output4 && !output5 && !output6 && !output7 && !output8){
         return `
         `
         } else {
@@ -120,14 +120,14 @@ const generateTableLicense = tableLicenseData => {
 };
 const generateTableContribute = tableContributeData => {
     if (tableContributeData) {
-        return`* [Contributor](#contributor)`;
+        return`* [Contributors](#contributors)`;
     } else {
         return "";
     }
 };
 const generateTableTest = tableTestData => {
     if (tableTestData) {
-        return`* [Tests](#test)`;
+        return`* [Tests](#tests)`;
     } else {
         return "";
     }
