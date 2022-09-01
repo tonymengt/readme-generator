@@ -1,33 +1,37 @@
 
-# asdf
- [![badge](https://img.shields.io/badge/License-GNU%20AGPLv3-brightorange)](https://choosealicense.com/licenses/unlicense/) [![badge](https://img.shields.io/badge/License-GNU%20GPLv3-brightorange)](https://choosealicense.com/licenses/unlicense/) [![badge](https://img.shields.io/badge/License-GNU%20LGPLv3-brightorange)](https://choosealicense.com/licenses/unlicense/) [![badge](https://img.shields.io/badge/License-Mozilla%20Public%20License%202.0-brightorange)](https://choosealicense.com/licenses/unlicense/) [![badge](https://img.shields.io/badge/License-Apache%20License%202.0-brightorange)](https://choosealicense.com/licenses/unlicense/) [![badge](https://img.shields.io/badge/License-MIT%20License-brightorange)](https://choosealicense.com/licenses/unlicense/) [![badge](https://img.shields.io/badge/License-Boost%20Software%20License%201.0-brightorange)](https://choosealicense.com/licenses/unlicense/) [![badge](https://img.shields.io/badge/License-The%20Unlicense-brightorange)](https://choosealicense.com/licenses/unlicense/)
+# Professional README.md Generator
+ [![badge](https://img.shields.io/badge/License-MIT%20License-brightorange)](https://choosealicense.com/licenses/unlicense/)
 ## Description
-asdf
+This application will enable the user to quickly and easily generate a README file using a command-line application. The application will prompt the user with a series of questions to fill out. Once completed, it will produce a professional README explaining how your application function, what dependcies is required.
 
 ## Table of contents
 
-
+* [Installation](#installation)
+* [Usage](#usage)
 * [License](#license)
-
-
+* [Contributor](#contributor)
+* [Tests](#test)
 * [Questions](#questions)
 
 
+## Installation
+This application will require NPM inquirer 8.2.4 package. Once you have cloned this repository, proceed with npm i to install the inqiure package.
+        
 
-## License
-This application has the following licenses:
-* [MIT License](https://choosealicense.com/licenses/mit/)
-* [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
-* [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
-* [GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)
-* [GNU LGPLv3](https://choosealicense.com/licenses/lgpl-3.0/)
-* [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
-* [Boost Software License 1.0](https://choosealicense.com/licenses/bls-1.0/)
-* [The Unlicense](https://choosealicense.com/licenses/unlicense/)
-                    
+## Usage
+To start this application, begin with inputting node index.js in your command-line application of your choice. Once application have started, you will be prompted with various questions  to fillout. Once completed, a README.md file will be created. <br> Please see below for step by step instruction on how to use this application.
+        
 
+        
 
+## Contributors
+Original Source Code: https://github.com/coding-boot-camp/potential-enigma
+        
+
+## Tests
+This is where the test samples and results will be displayed.
+        
 ## Questions
-If you have any questions feel free to contact me using the following sources:
-GitHub: [adsf](https://github.com/adsf) <br>
-Email: [asdf](mailto:asdf)
+If you have any questions feel free to contact me using the following sources: <br>
+GitHub: [tonymengt](https://github.com/tonymengt) <br>
+Email: [tonymengt@gmail.com](mailto:tonymengt@gmail.com)
