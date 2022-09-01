@@ -19,7 +19,7 @@ This application will require NPM inquirer 8.2.4 package. Once you have cloned t
         
 
 ## Usage
-To start this application, begin by inputting node index.js in your command-line application of your choice. Once application have started, you will be prompted with various questions to fillout. Once completed, a README.md file will be created. <br> <br> Please see below for step by step instruction on how to use this application. <br> https://drive.google.com/file/d/16vyd3z26yIc2mzyg8oAgPXvQPZj9fY5S/view
+To start this application, begin by inputting node index.js in your command-line application of your choice. Once application have started, you will be prompted with various questions to fillout. Once completed, a README.md file will be created. <br> <br> Please see below for step by step video guide on how to use this application. <br> [Demo Video](https://drive.google.com/file/d/16vyd3z26yIc2mzyg8oAgPXvQPZj9fY5S/view)
         
 ## License
 This application has the following licenses:
