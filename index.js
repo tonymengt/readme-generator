@@ -64,7 +64,7 @@ const questions = () => {
             type: "checkbox",
             name: "license",
             message: "please select the license right for your project.",
-            choices: ["MIT License", "Apache License 2.0", "GNU General Public License v3.0"]
+            choices: ["GNU AGPLv3", "GNU GPLv3", "GNU LGPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "MIT License", "Boost Software License 1.0", "The Unlicense"]
         },
         {
             type: "confrim",
@@ -122,14 +122,6 @@ const questions = () => {
         }
     ]);
 };
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
 
 questions()
     .then(questions => {
